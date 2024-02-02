@@ -20,6 +20,7 @@
   justify-content: space-between;
   align-items: center;
   height: 100%;
+  width: 100%;
 }
 
 .header .logo-img {
@@ -76,6 +77,10 @@
 }
 
 @media (max-width: 800px) {
+  .header {
+    padding: 10px 20px;
+  }
+
   .header label {
     display: inline-flex;
   }
@@ -100,5 +105,9 @@
   .menu-item {
     height: 40px;
     margin-top: 10px;
+  }
+
+  .header .logo-img {
+    max-width: 150px;
   }
 }

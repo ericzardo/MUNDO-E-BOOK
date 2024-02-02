@@ -46,6 +46,8 @@ p {
 
 .infos-content p {
   margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 25px;
 }
 
 .container {
@@ -57,6 +59,10 @@ p {
 .no-banner {
   position: relative;
   width: 100%;
+}
+
+.banner {
+  max-height: 1000px;
 }
 
 .overlay {
@@ -84,21 +90,9 @@ p {
   min-height: 100%;
 }
 
-.presentation {
-  max-height: 1000px;
-  width: 100%;
-  background-size: cover;
-  background-position: calc();
-}
-
-.presentation .infos-content h1,
+.banner .infos-content h1,
 .gradient h1 {
   margin-bottom: 20px;
-}
-
-.presentation .infos-content p {
-  font-size: 18px;
-  line-height: 25px;
 }
 
 .content {
@@ -161,20 +155,14 @@ p {
   background: #F6F6F6;
 }
 
-.illustration-1 {
+.right {
   margin: 40px 0;
   float: right;
 }
 
-.illustration-1 img {
+.right img {
   width: 500px;
   float: right;
-}
-
-.illustration-2 {
-  float: left;
-  margin-bottom: 50px;
-  margin-top: 30px;
 }
 
 .subtitle {
@@ -295,7 +283,7 @@ p {
   width: 300px;
 }
 
-.gradient .phone {
+.gradient .character {
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
@@ -322,9 +310,6 @@ p {
   margin-bottom: 10px;
 }
 
-.little {
-  max-height: 456px;
-}
 
 @media (max-width: 1450px) {
   .container {
@@ -335,8 +320,7 @@ p {
     height: 850px;
   }
 
-  .illustration-1,
-  .illustration-2 {
+  .right {
     float: none;
   }
 
@@ -352,7 +336,7 @@ p {
     margin: 0;
   }
 
-  .illustration-section {
+  .column-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -398,11 +382,11 @@ p {
   }
 
   .banner,
-  .illustration-section {
+  .column-section {
     height: 760px;
   }
 
-  .illustration-1 img {
+  .right img {
     width: 325px;
     height: 210px;
   }
