@@ -28,7 +28,7 @@
       <input type="checkbox" id="menu-control" class="menu-control">
       <ul class="menu">
         <li class="menu-item">
-          <a href="./index.html#ebook" class="current">E-BOOK</a>
+          <a href="./index.html#ebook" class="current">E-book</a>
         </li>
         <li class="menu-item">
           <a href="./index.html#chapters">CAPÍTULOS</a>
@@ -69,7 +69,7 @@
           <div class="infos-content">
             <span class="subtitle">Liberte-se do Vício</span>
             <h1>Guia Completo</h1>
-            <p>Desperte para uma vida sem cigarros com nosso guia prático. Este eBook oferece estratégias testadas e
+            <p>Desperte para uma vida sem cigarros com nosso guia prático. Este E-book oferece estratégias testadas e
               motivação para ajudar você a superar o vício em cigarro. Transforme seu estilo de vida, recupere a saúde e
               abrace a liberdade.</p>
             <a href="https://pay.kirvano.com/33f74aae-49ad-43ce-8214-198af91f182b" class="button">COMPRAR AGORA <i
@@ -88,7 +88,7 @@
           <div class="infos-content">
             <span class="subtitle">O que você encontrará</span>
             <h1>no E-book?</h1>
-            <p>Este e-Book oferece uma abordagem abrangente, fornecendo as ferramentas
+            <p>Este E-book oferece uma abordagem abrangente, fornecendo as ferramentas
               necessárias para superar desafios, manter a motivação e iniciar uma jornada bem-sucedida em direção a uma
               vida livre do cigarro. </p>
             <a href="https://pay.kirvano.com/33f74aae-49ad-43ce-8214-198af91f182b" class="button">Adquira Agora <i
@@ -104,7 +104,7 @@
         <div class="container">
 
           <span class="subtitle">Capítulos</span>
-          <h1>Desbrave Cada Capítulo do Nosso E-Book</h1>
+          <h1>Desbrave Cada Capítulo do Nosso E-book</h1>
           <ul class="chap-list">
             <li><span class="chap-id">1.</span> Introdução Para sua vida nova</li>
             <li><span class="chap-id">2.</span> Basics a quebrar velhos hábitos</li>
@@ -192,7 +192,7 @@
                   <p>24/05/2023</p>
                 </span>
               </div>
-              <p style="line-height: 29px; max-width: 440px;">O eBook foi crucial para me ajudar a largar o cigarro.
+              <p style="line-height: 29px; max-width: 440px;">O E-book foi crucial para me ajudar a largar o cigarro.
                 Hoje, estou livre do vício e me sinto incrível.
               </p>
             </div>
@@ -205,7 +205,7 @@
                   <p>06/07/2023</p>
                 </span>
               </div>
-              <p style="line-height: 29px; max-width: 440px;">Não consigo expressar o impacto positivo desse eBook na
+              <p style="line-height: 29px; max-width: 440px;">Não consigo expressar o impacto positivo desse E-book na
                 minha vida. Dicas realistas e motivação me ajudaram a superar os desafios.
               </p>
             </div>
@@ -214,11 +214,41 @@
 
           <div class="last-b">
             <a href="https://pay.kirvano.com/33f74aae-49ad-43ce-8214-198af91f182b" class="button last-b">Me interessei
-              no e-book <i class="material-icons">arrow_right</i></a>
+              no E-book <i class="material-icons">arrow_right</i></a>
           </div>
 
         </div>
       </div>
+    </section>
+
+    <section class="faq-container" id="faq">
+      <div class="container">
+        <h1>Perguntas Frequentes</h1>
+        <div class="faq=content">
+
+          <div class="faq-item">
+            <div class="question">O E-book disponível possui uma versão em português? <i
+                class="material-icons">arrow_right</i></div>
+            <div class="answer">Sim, o E-book está numa versão traduzida para o português, permitindo que você aproveite
+              o conteúdo em sua língua preferida.</div>
+          </div>
+          <div class="faq-item">
+            <div class="question">Como faço para acessar meu E-book após a compra? <i
+                class="material-icons">arrow_right</i></div>
+            <div class="answer">Após a compra, você terá acesso para baixar o E-book em formato PDF automaticamente.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="question">Como posso contatar o suporte em caso de dúvidas ou problemas técnicos? <i
+                class="material-icons">arrow_right</i></div>
+            <div class="answer">Para qualquer dúvida ou problema técnico, entre em contato com nossa equipe de suporte
+              através do e-mail ericszardo@gmail.com. Estamos disponíveis para ajudar e resolver suas questões o mais
+              rápido possível.</div>
+          </div>
+
+        </div>
+      </div>
+
     </section>
 
   </article>
@@ -229,11 +259,30 @@
         <img src="./assests/logo/horizontal-transparent.png" alt="Logo Mundo E-book">
       </div>
       <div class="copyright">
-        <p>&copy; 2024 Mundo E-Book. Todos os direitos reservados.</p>
+        <p>&copy; 2024 Mundo E-book. Todos os direitos reservados.</p>
       </div>
 
     </section>
   </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const questions = document.querySelectorAll('.question');
+
+      questions.forEach(question => {
+        question.addEventListener('click', function () {
+          const answer = this.nextElementSibling;
+
+          if (answer.classList.contains('active')) {
+            answer.classList.remove('active');
+          } else {
+            answer.classList.add('active');
+          }
+        });
+      });
+    });
+  </script>
+
 </body>
 
 </html>

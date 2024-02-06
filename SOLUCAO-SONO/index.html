@@ -28,7 +28,7 @@
       <input type="checkbox" id="menu-control" class="menu-control">
       <ul class="menu">
         <li class="menu-item">
-          <a href="./index.html#ebook" class="current">E-BOOK</a>
+          <a href="./index.html#ebook" class="current">E-book</a>
         </li>
         <li class="menu-item">
           <a href="./index.html#chapters">CAPÍTULOS</a>
@@ -104,7 +104,7 @@
         <div class="container">
 
           <span class="subtitle">Capítulos</span>
-          <h1>Desbrave Cada Capítulo do Nosso E-Book</h1>
+          <h1>Desbrave Cada Capítulo do Nosso E-book</h1>
           <ul class="chap-list">
             <li><span class="chap-id">1.</span> Sobre insônia</li>
             <li><span class="chap-id">2.</span> Meditação</li>
@@ -124,7 +124,7 @@
 
     <section class="no-banner gradient functions-section">
       <div class="container">
-        <h1>Explore o e-Book para:</h1>
+        <h1>Explore o E-book para:</h1>
         <div class="box">
 
           <div class="list">
@@ -207,20 +207,50 @@
                   <p>06/07/2023</p>
                 </span>
               </div>
-              <p style="line-height: 29px; max-width: 440px;">Esse e-book trouxe paz às minhas noites. Adormeço
+              <p style="line-height: 29px; max-width: 440px;">Esse E-book trouxe paz às minhas noites. Adormeço
                 serenamente. Um abraço ao sono!
               </p>
             </div>
 
-          </div>-->
+          </div>
 
           <div class="last-b">
             <a href="https://pay.kirvano.com/84fb5077-8b1c-4e79-96dc-2b3ef4228602" class="button last-b">Me interessei
-              no e-book <i class="material-icons">arrow_right</i></a>
+              no E-book<i class="material-icons">arrow_right</i></a>
           </div>
 
         </div>
       </div>
+    </section>
+
+    <section class="faq-container" id="faq">
+      <div class="container">
+        <h1>Perguntas Frequentes</h1>
+        <div class="faq=content">
+
+          <div class="faq-item">
+            <div class="question">O E-book disponível possui uma versão em português? <i
+                class="material-icons">arrow_right</i></div>
+            <div class="answer">Sim, o E-book está numa versão traduzida para o português, permitindo que você aproveite
+              o conteúdo em sua língua preferida.</div>
+          </div>
+          <div class="faq-item">
+            <div class="question">Como faço para acessar meu E-book após a compra? <i
+                class="material-icons">arrow_right</i></div>
+            <div class="answer">Após a compra, você terá acesso para baixar o E-book em formato PDF automaticamente.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="question">Como posso contatar o suporte em caso de dúvidas ou problemas técnicos? <i
+                class="material-icons">arrow_right</i></div>
+            <div class="answer">Para qualquer dúvida ou problema técnico, entre em contato com nossa equipe de suporte
+              através do e-mail ericszardo@gmail.com. Estamos disponíveis para ajudar e resolver suas questões o mais
+              rápido possível.</div>
+          </div>
+
+        </div>
+      </div>
+
     </section>
 
   </article>
@@ -231,11 +261,29 @@
         <img src="./assests/logo/horizontal-transparent.png" alt="Logo Mundo E-book">
       </div>
       <div class="copyright">
-        <p>&copy; 2024 Mundo E-Book. Todos os direitos reservados.</p>
+        <p>&copy; 2024 Mundo E-book. Todos os direitos reservados.</p>
       </div>
 
     </section>
   </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const questions = document.querySelectorAll('.question');
+
+      questions.forEach(question => {
+        question.addEventListener('click', function () {
+          const answer = this.nextElementSibling;
+
+          if (answer.classList.contains('active')) {
+            answer.classList.remove('active');
+          } else {
+            answer.classList.add('active');
+          }
+        });
+      });
+    });
+  </script>
 </body>
 
 </html>

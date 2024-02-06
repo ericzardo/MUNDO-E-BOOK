@@ -226,6 +226,35 @@
       </div>
     </section>
 
+    <section class="faq-container" id="faq">
+      <div class="container">
+        <h1>Perguntas Frequentes</h1>
+        <div class="faq=content">
+
+          <div class="faq-item">
+            <div class="question">O E-book disponível possui uma versão em português? <i
+                class="material-icons">arrow_right</i></div>
+            <div class="answer">Sim, o E-book está numa versão traduzida para o português, permitindo que você aproveite
+              o conteúdo em sua língua preferida.</div>
+          </div>
+          <div class="faq-item">
+            <div class="question">Como faço para acessar meu E-book após a compra? <i
+                class="material-icons">arrow_right</i></div>
+            <div class="answer">Após a compra, você terá acesso para baixar o E-book em formato PDF automaticamente.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="question">Como posso contatar o suporte em caso de dúvidas ou problemas técnicos? <i
+                class="material-icons">arrow_right</i></div>
+            <div class="answer">Para qualquer dúvida ou problema técnico, entre em contato com nossa equipe de suporte
+              através do e-mail ericszardo@gmail.com. Estamos disponíveis para ajudar e resolver suas questões o mais
+              rápido possível.</div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
   </article>
 
   <footer class="footer">
@@ -239,6 +268,24 @@
 
     </section>
   </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const questions = document.querySelectorAll('.question');
+
+      questions.forEach(question => {
+        question.addEventListener('click', function () {
+          const answer = this.nextElementSibling;
+
+          if (answer.classList.contains('active')) {
+            answer.classList.remove('active');
+          } else {
+            answer.classList.add('active');
+          }
+        });
+      });
+    });
+  </script>
 </body>
 
 </html>
